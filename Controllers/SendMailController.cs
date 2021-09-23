@@ -31,7 +31,7 @@ namespace SendMailThroughMVC.Controllers
                 smtp.Host = "smtp.gmail.com";
                 smtp.Port = 587;
                 smtp.UseDefaultCredentials = false;
-                smtp.Credentials = new System.Net.NetworkCredential("Username", "Password"); // Enter seders User name and password       
+                smtp.Credentials = new System.Net.NetworkCredential("Username", "Password"); // Enter senders User name and password       
                 smtp.EnableSsl = true;
                 smtp.Send(message);
 
